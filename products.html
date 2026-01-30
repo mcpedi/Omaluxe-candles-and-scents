@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Omaluxe Candles and Scents</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>Omaluxe</h1>
+                <p class="tagline">Candles & Scents</p>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#" id="cart-link" class="cart-link">
+                    Cart (<span id="cart-count">0</span>)
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Products</h1>
+            <p>Explore our luxurious collection of scented candles</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <!-- Filter Section -->
+            <div class="filter-section">
+                <h3>Filter by Category</h3>
+                <div class="filter-buttons">
+                    <button class="filter-btn active" data-category="all">All Products</button>
+                    <button class="filter-btn" data-category="candles">Candles</button>
+                    <button class="filter-btn" data-category="scents">Scents</button>
+                    <button class="filter-btn" data-category="gift-sets">Gift Sets</button>
+                </div>
+            </div>
+
+            <!-- Products Grid -->
+            <div class="products-grid" id="products-grid">
+                <!-- Products will be loaded here by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Modal -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modal-product-image" src="" alt="">
+                </div>
+                <div class="modal-details">
+                    <h2 id="modal-product-name"></h2>
+                    <p class="modal-product-price" id="modal-product-price"></p>
+                    <p id="modal-product-description"></p>
+                    <div class="product-info">
+                        <p><strong>Size:</strong> <span id="modal-product-size"></span></p>
+                        <p><strong>Burn Time:</strong> <span id="modal-product-burn"></span></p>
+                    </div>
+                    <div class="quantity-selector">
+                        <label>Quantity:</label>
+                        <button id="decrease-qty">-</button>
+                        <input type="number" id="modal-quantity" value="1" min="1">
+                        <button id="increase-qty">+</button>
+                    </div>
+                    <button class="btn-primary btn-add-to-cart" id="modal-add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Omaluxe</h3>
+                    <p>Premium scented candles for every moment</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p>Email: info@omaluxe.com</p>
+                    <p>Phone: (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Omaluxe Candles and Scents. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="products-data.js"></script>
+    <script src="cart.js"></script>
+    <script src="products.js"></script>
+</body>
+</html>

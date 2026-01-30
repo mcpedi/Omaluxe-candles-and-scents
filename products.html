@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - Omaluxe</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <h1>Omaluxe</h1>
+                <p class="tagline">Candles & Scents</p>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html" class="cart-link">
+                    <span>🛒</span>
+                    <span class="cart-count">0</span>
+                </a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Our Products</h1>
+            <p>Discover our collection of premium candles and scents</p>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+        <div class="container">
+            <div class="products-layout">
+                <!-- Filter Sidebar -->
+                <aside class="filters">
+                    <h3>Filter Products</h3>
+                    
+                    <div class="filter-group">
+                        <h4>Category</h4>
+                        <label><input type="radio" name="category" value="all" checked> All Products</label>
+                        <label><input type="radio" name="category" value="scented"> Scented Candles</label>
+                        <label><input type="radio" name="category" value="luxury"> Luxury Candles</label>
+                        <label><input type="radio" name="category" value="gifts"> Gift Sets</label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Price Range</h4>
+                        <label><input type="radio" name="price" value="all" checked> All Prices</label>
+                        <label><input type="radio" name="price" value="0-20"> Under $20</label>
+                        <label><input type="radio" name="price" value="20-40"> $20 - $40</label>
+                        <label><input type="radio" name="price" value="40+"> $40+</label>
+                    </div>
+
+                    <div class="filter-group">
+                        <h4>Sort By</h4>
+                        <select id="sort-select">
+                            <option value="featured">Featured</option>
+                            <option value="price-low">Price: Low to High</option>
+                            <option value="price-high">Price: High to Low</option>
+                            <option value="name">Name: A to Z</option>
+                        </select>
+                    </div>
+                </aside>
+
+                <!-- Products Grid -->
+                <div class="products-main">
+                    <div class="products-header">
+                        <p class="product-count"><span id="product-count">0</span> products found</p>
+                        <div class="search-box">
+                            <input type="text" id="search-input" placeholder="Search products...">
+                        </div>
+                    </div>
+                    
+                    <div class="product-grid" id="products-grid">
+                        <!-- Products will be loaded by JavaScript -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Omaluxe</h3>
+                    <p>Premium handcrafted candles and scents</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Us</h4>
+                    <p>Email: info@omaluxe.com</p>
+                    <p>Phone: (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Omaluxe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/products.js"></script>
+    <script src="js/cart.js"></script>
+    <script src="js/products-page.js"></script>
+</body>
+</html>
